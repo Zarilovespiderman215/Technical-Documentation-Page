@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    #navbar {
+      width: 250px;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      top: 0;
+    }
+
+    #navbar header {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .nav-link:hover {
+      background-color: #555;
+      padding: 5px;
+    }
+
+    #main-doc {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+
+    .main-section {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    code {
+      display: block;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    /* For smaller screens */
+    @media screen and (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      #navbar {
+        width: 100%;
+        position: static;
+        height: auto;
+      }
+
+      #main-doc {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Setup_Instructions" class="nav-link">Setup Instructions</a>
+    <a href="#Configuration" class="nav-link">Configuration</a>
+    <a href="#Usage" class="nav-link">Usage</a>
+    <a href="#Troubleshooting" class="nav-link">Troubleshooting</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>This is the introduction to our documentation.</p>
+      <p>Here, you'll find useful information to help you use this software.</p>
+      <p>We’ll explain everything step by step.</p>
+      <code>function introduction() { return "Welcome to the Docs!"; }</code>
+      <p>Make sure you read all sections for a complete understanding!</p>
+      <code>const section = "Introduction";</code>
+      <ul>
+        <li>Purpose of the document</li>
+        <li>How to read and use this guide</li>
+        <li>Important information</li>
+        <li>Overview of what’s covered</li>
+        <li>Examples of usage</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Setup_Instructions">
+      <header>
+        <h2>Setup Instructions</h2>
+      </header>
+      <p>Here’s how to set up the software on your computer.</p>
+      <code>npm install software-name</code>
+      <p>Install all necessary files first to make sure it works correctly.</p>
+      <p>If something goes wrong, check the instructions again.</p>
+      <code>git clone https://github.com/username/software-repo.git</code>
+      <ul>
+        <li>Install the dependencies</li>
+        <li>Clone the repository</li>
+        <li>Set up environment variables</li>
+        <li>Run tests to check if it works</li>
+        <li>Start using the software</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Configuration">
+      <header>
+        <h2>Configuration</h2>
+      </header>
+      <p>This section shows how to configure the software to fit your needs.</p>
+      <code>config.set("theme", "dark");</code>
+      <p>You can change settings like themes, performance, and more!</p>
+      <p>Look at the configuration guide for more options.</p>
+      <code>config.load("settings.json");</code>
+      <ul>
+        <li>Change settings</li>
+        <li>Update configuration files</li>
+        <li>Adjust for better performance</li>
+        <li>Use custom themes</li>
+        <li>Set up notifications</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Usage">
+      <header>
+        <h2>Usage</h2>
+      </header>
+      <p>This section explains how to use the software once it’s set up.</p>
+      <code>software.run();</code>
+      <p>Make sure you follow the usage guidelines to avoid errors.</p>
+      <p>You can check the “How to use” section for more examples.</p>
+      <code>software.start("process_name");</code>
+      <ul>
+        <li>Start the software</li>
+        <li>Understand the basic commands</li>
+        <li>Use the help command for guidance</li>
+        <li>Configure according to your needs</li>
+        <li>Test your work</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Troubleshooting">
+      <header>
+        <h2>Troubleshooting</h2>
+      </header>
+      <p>If you run into any issues, check this section for help.</p>
+      <code>error.log("Something went wrong!");</code>
+      <p>Here are common problems and their solutions.</p>
+      <p>Contact support if you can't fix the issue yourself.</p>
+      <code>debug.activate();</code>
+      <ul>
+        <li>Software not opening</li>
+        <li>Configuration issues</li>
+        <li>Performance problems</li>
+        <li>Dependency errors</li>
+        <li>Network issues</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
